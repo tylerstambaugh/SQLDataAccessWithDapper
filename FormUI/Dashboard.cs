@@ -23,5 +23,17 @@ namespace FormUI
 
             UpdateBinding();
         }
+
+        private void createRecordButton_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+
+            db.InsertEmployee(firstNameInsInput.Text, lastNameInsInput.Text,
+                genderInsInput.Text);
+
+            firstNameInsInput.Text = "";
+            lastNameInsInput.Text = "";
+            genderInsInput.Text = "";
+        }
     }
 }

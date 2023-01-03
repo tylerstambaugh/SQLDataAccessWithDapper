@@ -32,6 +32,13 @@
             this.lastNameText = new System.Windows.Forms.TextBox();
             this.lastNameLabel = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
+            this.firstNameInsLabel = new System.Windows.Forms.Label();
+            this.firstNameInsInput = new System.Windows.Forms.TextBox();
+            this.lastNameInsLabel = new System.Windows.Forms.Label();
+            this.lastNameInsInput = new System.Windows.Forms.TextBox();
+            this.genderInsLabel = new System.Windows.Forms.Label();
+            this.genderInsInput = new System.Windows.Forms.TextBox();
+            this.createRecordButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // employeesFoundListbox
@@ -69,11 +76,76 @@
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
+            // firstNameInsLabel
+            // 
+            this.firstNameInsLabel.AutoSize = true;
+            this.firstNameInsLabel.Location = new System.Drawing.Point(53, 410);
+            this.firstNameInsLabel.Name = "firstNameInsLabel";
+            this.firstNameInsLabel.Size = new System.Drawing.Size(106, 28);
+            this.firstNameInsLabel.TabIndex = 5;
+            this.firstNameInsLabel.Text = "First Name";
+            // 
+            // firstNameInsInput
+            // 
+            this.firstNameInsInput.Location = new System.Drawing.Point(162, 410);
+            this.firstNameInsInput.Name = "firstNameInsInput";
+            this.firstNameInsInput.Size = new System.Drawing.Size(193, 34);
+            this.firstNameInsInput.TabIndex = 4;
+            // 
+            // lastNameInsLabel
+            // 
+            this.lastNameInsLabel.AutoSize = true;
+            this.lastNameInsLabel.Location = new System.Drawing.Point(53, 447);
+            this.lastNameInsLabel.Name = "lastNameInsLabel";
+            this.lastNameInsLabel.Size = new System.Drawing.Size(103, 28);
+            this.lastNameInsLabel.TabIndex = 7;
+            this.lastNameInsLabel.Text = "Last Name";
+            // 
+            // lastNameInsInput
+            // 
+            this.lastNameInsInput.Location = new System.Drawing.Point(162, 447);
+            this.lastNameInsInput.Name = "lastNameInsInput";
+            this.lastNameInsInput.Size = new System.Drawing.Size(193, 34);
+            this.lastNameInsInput.TabIndex = 6;
+            // 
+            // genderInsLabel
+            // 
+            this.genderInsLabel.AutoSize = true;
+            this.genderInsLabel.Location = new System.Drawing.Point(53, 485);
+            this.genderInsLabel.Name = "genderInsLabel";
+            this.genderInsLabel.Size = new System.Drawing.Size(76, 28);
+            this.genderInsLabel.TabIndex = 9;
+            this.genderInsLabel.Text = "Gender";
+            // 
+            // genderInsInput
+            // 
+            this.genderInsInput.Location = new System.Drawing.Point(162, 485);
+            this.genderInsInput.Name = "genderInsInput";
+            this.genderInsInput.Size = new System.Drawing.Size(193, 34);
+            this.genderInsInput.TabIndex = 8;
+            // 
+            // createRecordButton
+            // 
+            this.createRecordButton.Location = new System.Drawing.Point(162, 554);
+            this.createRecordButton.Name = "createRecordButton";
+            this.createRecordButton.Size = new System.Drawing.Size(101, 67);
+            this.createRecordButton.TabIndex = 10;
+            this.createRecordButton.Text = "Create";
+            this.createRecordButton.UseVisualStyleBackColor = true;
+            this.createRecordButton.Click += new System.EventHandler(this.createRecordButton_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 605);
+            this.ClientSize = new System.Drawing.Size(698, 771);
+            this.Controls.Add(this.createRecordButton);
+            this.Controls.Add(this.genderInsLabel);
+            this.Controls.Add(this.genderInsInput);
+            this.Controls.Add(this.lastNameInsLabel);
+            this.Controls.Add(this.lastNameInsInput);
+            this.Controls.Add(this.firstNameInsLabel);
+            this.Controls.Add(this.firstNameInsInput);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.lastNameLabel);
             this.Controls.Add(this.lastNameText);
@@ -93,5 +165,12 @@
         private TextBox lastNameText;
         private Label lastNameLabel;
         private Button searchButton;
+        private Label firstNameInsLabel;
+        private TextBox firstNameInsInput;
+        private Label lastNameInsLabel;
+        private TextBox lastNameInsInput;
+        private Label genderInsLabel;
+        private TextBox genderInsInput;
+        private Button createRecordButton;
     }
 }
